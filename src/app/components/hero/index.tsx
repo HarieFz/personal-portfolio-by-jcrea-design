@@ -1,0 +1,119 @@
+"use client";
+
+import Image from "next/image";
+import React, { useState } from "react";
+import Illustration1 from "../../../../public/images/illustration-1.png";
+import Illustration2 from "../../../../public/images/illustration-2.png";
+import IllustrationJenny from "../../../../public/images/illustration-jenny-1.png";
+import Jenny from "../../../../public/images/jenny-1.png";
+import Ellipse from "../../../../public/images/ellipse.png";
+import Stars from "../../../../public/images/stars.png";
+import QuoteUp from "../../../../public/images/quote-up.png";
+import { urbanist } from "../fonts";
+import { AnimatePresence, motion } from "motion/react";
+
+export default function Hero() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <section className="relative max-w-7xl w-full mx-auto mt-14">
+      <motion.div
+        animate={{ y: isHovered ? 200 : 0, scale: isHovered ? 0.5 : 1, opacity: isHovered ? 0 : 1 }}
+        transition={{ type: "spring", stiffness: 500, damping: 30 }}
+        className="flex flex-col items-center"
+      >
+        <button className="relative w-fit border border-black rounded-[38.24px] px-[25.49px] py-[9.5px] mb-2.5">
+          <p>Hello</p>
+          <span className="absolute -top-5 -right-6">
+            <Image src={Illustration1} alt="illustration" width={0} height={0} className="w-7 h-7.25" />
+          </span>
+        </button>
+
+        <div className="relative z-0">
+          <p className={`font-semibold text-[95.57px] leading-none text-center text-black ${urbanist.className}`}>
+            I’m <span className="text-primary">Jenny</span>,
+            <br />
+            Product Designer
+          </p>
+          <span className="absolute -bottom-13 -left-15">
+            <Image src={Illustration2} alt="illustration" width={0} height={0} className="w-18 h-18.75" />
+          </span>
+        </div>
+      </motion.div>
+
+      <div className="w-[952px] h-[636px] absolute top-38 left-1/2 -translate-x-1/2">
+        <div
+          className="w-[811.78px] h-[405.89] absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-full z-30"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        ></div>
+        <div className="w-[952px] h-[636px] absolute top-0 left-1/2 -translate-x-1/2 z-20">
+          <Image
+            src={Jenny}
+            alt=""
+            width={0}
+            height={0}
+            sizes="100vw"
+            priority
+            className="w-[952px] h-[636px] object-contain object-center"
+          />
+        </div>
+        <div className="w-[811.78px] h-[405.89px] absolute bottom-0 left-1/2 -translate-x-1/2 z-0">
+          <Image
+            src={Ellipse}
+            alt=""
+            width={0}
+            height={0}
+            sizes="100vw"
+            priority
+            className="w-[811.78px] h-[405.89px] object-contain object-center"
+          />
+        </div>
+        <motion.div
+          animate={{ scale: isHovered ? 1 : 0 }}
+          transition={{ type: "spring", stiffness: 500, damping: 30 }}
+          className="w-[1017.91px] h-[688.48px] absolute -top-10 left-1/2 -translate-x-1/2 z-10"
+        >
+          <Image
+            src={IllustrationJenny}
+            alt=""
+            width={0}
+            height={0}
+            sizes="100vw"
+            priority
+            className="w-[1017.91px] h-[688.48px] object-contain object-center"
+          />
+        </motion.div>
+      </div>
+
+      <AnimatePresence>
+        <motion.div
+          animate={{ top: isHovered ? 80 : 310 }}
+          transition={{ type: "spring", stiffness: 400, damping: 30 }}
+          className={`w-full absolute`}
+        >
+          <div className="flex justify-between">
+            <div>
+              <Image src={QuoteUp} alt="" width={0} height={0} sizes="100vw" className="w-9 h-9" />
+              <p className="font-medium text-xl mt-6">
+                Jenny’s Exceptional product design
+                <br />
+                ensure our website’s success.
+                <br />
+                Highly Recommended
+              </p>
+            </div>
+
+            <div className="flex flex-col items-end">
+              <Image src={Stars} alt="Stars" width={0} height={0} sizes="100vw" className="w-[160px] h-[32px]" />
+              <p className="font-bold text-[47px] leading-none mt-5.25 mb-1.25">
+                10 Years <br />
+              </p>
+              <p className="text-xl">Experince</p>
+            </div>
+          </div>
+        </motion.div>
+      </AnimatePresence>
+    </section>
+  );
+}

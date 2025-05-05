@@ -9,14 +9,14 @@ import Jenny from "../../../../public/images/jenny-1.png";
 import Ellipse from "../../../../public/images/ellipse.png";
 import Stars from "../../../../public/images/stars.png";
 import QuoteUp from "../../../../public/images/quote-up.png";
-import { urbanist } from "../fonts";
 import { AnimatePresence, motion } from "motion/react";
+import { urbanist } from "../../../components/fonts";
 
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="relative max-w-7xl w-full mx-auto mt-14">
+    <section className="relative max-w-7xl lg:max-w-6xl w-full h-[787px] mx-auto mt-14">
       <motion.div
         animate={{ y: isHovered ? 200 : 0, scale: isHovered ? 0.5 : 1, opacity: isHovered ? 0 : 1 }}
         transition={{ type: "spring", stiffness: 500, damping: 30 }}
@@ -80,7 +80,6 @@ export default function Hero() {
             width={0}
             height={0}
             sizes="100vw"
-            priority
             className="w-[1017.91px] h-[688.48px] object-contain object-center"
           />
         </motion.div>

@@ -3,7 +3,15 @@
 @theme {
   --color-primary: #fd853a;
   --color-black: #171717;
+  --color-dark-bluish-gray: #1d2939;
 
   --max-width-8xl: 90rem;
   --max-width-9xl: 100rem;
+}
+
+.masking {
+  -webkit-mask: url("../../public/images/shapes.png") center / contain no-repeat, linear-gradient(black 0 0);
+  mask-size: 416px;
+  mask-position: center;
+  mask-composite: intersect;
 }

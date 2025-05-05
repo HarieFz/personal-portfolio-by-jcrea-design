@@ -44,7 +44,7 @@ export default function Service() {
             </div>
             <div className="absolute bottom-0 right-0 z-10">
               <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary w-28.5 h-28.5 rounded-full flex items-center justify-center">
-                <Image src={ArrowRightUp} alt="arrow" width={0} height={0} sizes="100vw" className="w-auto h-auto" />
+                <ArrowRightUp className="w-18 h-18 text-white" />
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function Service() {
             </div>
             <div className="absolute bottom-0 right-0 z-10">
               <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary w-28.5 h-28.5 rounded-full flex items-center justify-center">
-                <Image src={ArrowRightUp} alt="arrow" width={0} height={0} sizes="100vw" className="w-auto h-auto" />
+                <ArrowRightUp className="w-18 h-18 text-white" />
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function Service() {
             </div>
             <div className="absolute bottom-0 right-0 z-10">
               <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary w-28.5 h-28.5 rounded-full flex items-center justify-center">
-                <Image src={ArrowRightUp} alt="arrow" width={0} height={0} sizes="100vw" className="w-auto h-auto" />
+                <ArrowRightUp className="w-18 h-18 text-white" />
               </div>
             </div>
           </div>

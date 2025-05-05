@@ -9,11 +9,13 @@ import Jenny from "../../../../public/images/jenny-1.png";
 import Ellipse from "../../../../public/images/ellipse.png";
 import Stars from "../../../../public/images/stars.png";
 import QuoteUp from "../../../../public/images/quote-up.png";
+import ArrowRightUp from "../../../../public/icons/arrow-right-up.svg";
 import { AnimatePresence, motion } from "motion/react";
 import { urbanist } from "../../../components/fonts";
 
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isBtnDefault, setIsBtnDefault] = useState(true);
 
   return (
     <section className="relative max-w-7xl lg:max-w-6xl w-full h-[787px] mx-auto mt-14">
@@ -42,11 +44,38 @@ export default function Hero() {
       </motion.div>
 
       <div className="w-[952px] h-[636px] absolute top-38 left-1/2 -translate-x-1/2">
+        <div className="max-w-[367px] w-[367px] absolute left-1/2 bottom-11.5 -translate-x-1/2 z-40">
+          <div
+            className="p-2.5 flex items-center gap-2.5 bg-white/10 rounded-[50px] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border-2 before:border-transparent before:[background:linear-gradient(to_right_top,rgba(255,255,255,1),rgba(201,201,201,0))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)] after:absolute after:inset-0 after:-z-10 after:backdrop-blur-xs
+          "
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <button
+              className={`flex items-center rounded-[60px] py-2.5 text-[25.69px] text-nowrap text-white transition-all ${
+                isBtnDefault ? "bg-primary border-[0.5px] border-[#D0D5DD] px-8 font-medium" : "px-[17.5px] font-light"
+              }`}
+            >
+              Portfolio <ArrowRightUp className={`w-10.5 h-10.5 ${isBtnDefault ? "flex" : "hidden"}`} />
+            </button>
+            <button
+              className={`flex items-center rounded-[60px] py-2.5 text-[25.69px] text-nowrap text-white transition-all ${
+                !isBtnDefault ? "bg-primary border-[0.5px] border-[#D0D5DD] px-8 font-medium" : "px-[17.5px] font-light"
+              }`}
+              onMouseEnter={() => setIsBtnDefault(false)}
+              onMouseLeave={() => setIsBtnDefault(true)}
+            >
+              Hire Me <ArrowRightUp className={`w-10.5 h-10.5 ${!isBtnDefault ? "flex" : "hidden"}`} />
+            </button>
+          </div>
+        </div>
+
         <div
           className="w-[811.78px] h-[405.89] absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-full z-30"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         ></div>
+
         <div className="w-[952px] h-[636px] absolute top-0 left-1/2 -translate-x-1/2 z-20">
           <Image
             src={Jenny}

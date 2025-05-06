@@ -118,7 +118,7 @@ export default function Hero() {
         <motion.div
           animate={{ top: isHovered ? 80 : 310 }}
           transition={{ type: "spring", stiffness: 400, damping: 30 }}
-          className={`w-full absolute`}
+          className={`w-full absolute -z-10`}
         >
           <div className="flex justify-between">
             <div>

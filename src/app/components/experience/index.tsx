@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <section className="max-w-7xl w-full mx-auto pt-21.25 pb-38.75">
       <h1 className="font-medium text-[64px] text-center mb-21.25">
-        <span className="text-charcoal-blue">My</span> <span className="text-primary">Work Experince</span>
+        <span className="text-charcoal-blue">My</span> <span className="text-primary">Work Experience</span>
       </h1>
 
       <div className="flex justify-between">
@@ -33,7 +33,7 @@ export default function Experience() {
 
         <div className="flex flex-col gap-12">
           <div>
-            <p className="font-semibold text-[40px] text-charcoal-blue mb-3.5">Experince Designer</p>
+            <p className="font-semibold text-[40px] text-charcoal-blue mb-3.5">Experience Designer</p>
             <p className="font-medium text-xl text-blue-gray">
               Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Duis lacus nunc, posuere in justo <br />
               vulputate, bibendum sodales

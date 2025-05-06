@@ -1,5 +1,11 @@
-import { Urbanist } from "next/font/google";
+import { Inter, Urbanist } from "next/font/google";
 import localFont from "next/font/local";
+
+export const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const urbanist = Urbanist({
   subsets: ["latin"],

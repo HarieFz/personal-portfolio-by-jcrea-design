@@ -9,6 +9,8 @@
 
   --max-width-8xl: 90rem;
   --max-width-9xl: 100rem;
+
+  --animate-infinite-scroll: infinite-scroll 25s linear infinite;
 }
 
 .masking {
@@ -16,4 +18,13 @@
   mask-size: 416px;
   mask-position: center;
   mask-composite: intersect;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
 }

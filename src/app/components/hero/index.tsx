@@ -44,7 +44,7 @@ export default function Hero() {
       </motion.div>
 
       <div className="w-[952px] h-[636px] absolute top-38 left-1/2 -translate-x-1/2">
-        <div className="max-w-[367px] w-[367px] absolute left-1/2 bottom-11.5 -translate-x-1/2 z-40">
+        <div className="max-w-[367px] w-full max-h-[82px] h-full absolute left-1/2 bottom-11.5 -translate-x-1/2 z-40">
           <div
             className="p-2.5 flex items-center gap-2.5 bg-white/10 rounded-[50px] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border-2 before:border-transparent before:[background:linear-gradient(to_right_top,rgba(255,255,255,1),rgba(201,201,201,0))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)] after:absolute after:inset-0 after:-z-10 after:backdrop-blur-xs
           "

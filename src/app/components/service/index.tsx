@@ -11,9 +11,9 @@ export default function Service() {
 
       <div className="relative px-[70.5px] pt-[116px] pb-[51.92px] z-10">
         <div className="flex items-center justify-between mb-24">
-          <p className="font-medium text-5xl">
+          <h1 className="font-medium text-5xl">
             <span className="text-[#FCFCFD]">My</span> <span className="text-[#FD853A]">Services</span>
-          </p>
+          </h1>
           <p className="w-[576px] font-medium text-xl text-wrap text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate,
             bibendum sodales

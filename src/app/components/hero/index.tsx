@@ -18,7 +18,7 @@ export default function Hero() {
   const [isBtnDefault, setIsBtnDefault] = useState(true);
 
   return (
-    <section className="relative max-w-7xl lg:max-w-6xl w-full h-[787px] mx-auto mt-14">
+    <section className="relative min-[1440px]:max-w-7xl max-w-6xl w-full h-[787px] mx-auto mt-14">
       <motion.div
         animate={{ y: isHovered ? 200 : 0, scale: isHovered ? 0.5 : 1, opacity: isHovered ? 0 : 1 }}
         transition={{ type: "spring", stiffness: 500, damping: 30 }}

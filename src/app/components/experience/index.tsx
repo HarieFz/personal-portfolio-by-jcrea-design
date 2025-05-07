@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <section className="max-w-7xl w-full mx-auto pt-21.25 pb-38.75">
+    <section className="min-[1440px]:max-w-7xl max-w-6xl w-full mx-auto pt-21.25 pb-38.75">
       <h1 className="font-medium text-[64px] text-center mb-21.25">
         <span className="text-charcoal-blue">My</span> <span className="text-primary">Work Experience</span>
       </h1>

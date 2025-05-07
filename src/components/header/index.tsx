@@ -10,7 +10,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="max-w-7xl lg:max-w-6xl mx-auto mt-12.5">
+    <header className="min-[1440px]:max-w-7xl max-w-6xl mx-auto mt-12.5">
       <div className="bg-black rounded-[50px] p-2.5">
         <nav>
           <ul className="flex flex-wrap items-center justify-between gap-[14.17px] text-white">

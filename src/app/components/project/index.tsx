@@ -7,7 +7,7 @@ const project = [1, 2];
 
 export default function Project() {
   return (
-    <section className="max-w-8xl w-full mx-auto px-17.75 py-24.25">
+    <section className="min-[1440px]:max-w-7xl max-w-6xl w-full mx-auto py-24.25">
       <div className="flex items-center justify-between mb-12">
         <h1 className="font-semibold text-[64px]">
           <span className="text-charcoal-blue">

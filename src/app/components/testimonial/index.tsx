@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import Illustration3 from "../../../../public/images/illustration-3.png";
@@ -6,6 +8,12 @@ import Illustration5 from "../../../../public/images/illustration-5.png";
 import Person from "../../../../public/images/person.png";
 import Stars from "../../../../public/images/stars.png";
 import { urbanist } from "@/components/fonts";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper/modules";
+import "swiper/css/free-mode";
+import "swiper/css";
+
+const testimonials = [1, 2, 3];
 
 export default function Testimonial() {
   return (
@@ -61,110 +69,52 @@ export default function Testimonial() {
           </div>
         </div>
 
-        <div className="max-w-[784px] w-full mx-auto gap-6">
-          <div className="w-[784px] absolute -translate-x-[50.625rem] rounded-3xl p-5.25 group">
-            <div className="absolute inset-0 bg-white/[14%] rounded-[inherit] backdrop-blur-sm z-0 border-2 border-transparent transition-colors group-hover:border-2 group-hover:border-[#979797]"></div>
-            <div className="relative flex flex-col gap-3.5">
-              <div className="flex items-center gap-3">
-                <Image
-                  src={Person}
-                  alt="person"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-13.75 h-13.75 rounded-full"
-                />
-                <div>
-                  <p className={`${urbanist.className} font-bold text-[23.5px] tracking-normal text-[#FCFCFD]`}>
-                    Jayesh Patil
+        <Swiper
+          spaceBetween={32}
+          slidesPerView={"auto"}
+          centeredSlides={true}
+          grabCursor={true}
+          initialSlide={1}
+          modules={[FreeMode]}
+        >
+          {testimonials.map((_, index) => (
+            <SwiperSlide key={index} className="!w-[784px]">
+              <div className="rounded-3xl p-5.25 group relative">
+                <div className="absolute inset-0 bg-white/[14%] rounded-[inherit] backdrop-blur-sm z-0 border-2 border-transparent transition-colors group-hover:border-[#979797]" />
+                <div className="relative flex flex-col gap-3.5 z-10">
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={Person}
+                      alt="person"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-13.75 h-13.75 rounded-full"
+                    />
+                    <div>
+                      <p className={`${urbanist.className} font-bold text-[23.5px] tracking-normal text-[#FCFCFD]`}>
+                        Jayesh Patil
+                      </p>
+                      <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>
+                        CEO, Lirante
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-1.25">
+                    <Image src={Stars} alt="stars" width={0} height={0} sizes="100vw" className="w-[160px] h-8" />
+                    <p className="font-medium text-[25.69px] text-[#FCFDFD] leading-none">5.0</p>
+                  </div>
+
+                  <p className="text-xl text-[#F9FAFB]">
+                    consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
                   </p>
-                  <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>CEO, Lirante</p>
                 </div>
               </div>
-
-              <div className="flex items-center gap-1.25">
-                <Image src={Stars} alt="stars" width={0} height={0} sizes="100vw" className="w-[160px] h-8" />
-                <p className="font-medium text-[25.69px] text-[#FCFDFD] leading-none">5.0</p>
-              </div>
-
-              <div>
-                <p className="text-xl text-[#F9FAFB]">
-                  consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum
-                  egestas lobortis.Sed lobortis orci elementum egestas lobortis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-[784px] absolute translate-x-0 rounded-3xl p-5.25 group">
-            <div className="absolute inset-0 bg-white/[14%] rounded-[inherit] backdrop-blur-sm z-0 border-2 border-transparent transition-colors group-hover:border-2 group-hover:border-[#979797]"></div>
-            <div className="relative flex flex-col gap-3.5">
-              <div className="flex items-center gap-3">
-                <Image
-                  src={Person}
-                  alt="person"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-13.75 h-13.75 rounded-full"
-                />
-                <div>
-                  <p className={`${urbanist.className} font-bold text-[23.5px] tracking-normal text-[#FCFCFD]`}>
-                    Jayesh Patil
-                  </p>
-                  <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>CEO, Lirante</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-1.25">
-                <Image src={Stars} alt="stars" width={0} height={0} sizes="100vw" className="w-[160px] h-8" />
-                <p className="font-medium text-[25.69px] text-[#FCFDFD] leading-none">5.0</p>
-              </div>
-
-              <div>
-                <p className="text-xl text-[#F9FAFB]">
-                  consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum
-                  egestas lobortis.Sed lobortis orci elementum egestas lobortis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-[784px] absolute translate-x-[50.625rem] rounded-3xl p-5.25 group">
-            <div className="absolute inset-0 bg-white/[14%] rounded-[inherit] backdrop-blur-sm z-0 border-2 border-transparent transition-colors group-hover:border-2 group-hover:border-[#979797]"></div>
-            <div className="relative flex flex-col gap-3.5">
-              <div className="flex items-center gap-3">
-                <Image
-                  src={Person}
-                  alt="person"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-13.75 h-13.75 rounded-full"
-                />
-                <div>
-                  <p className={`${urbanist.className} font-bold text-[23.5px] tracking-normal text-[#FCFCFD]`}>
-                    Jayesh Patil
-                  </p>
-                  <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>CEO, Lirante</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-1.25">
-                <Image src={Stars} alt="stars" width={0} height={0} sizes="100vw" className="w-[160px] h-8" />
-                <p className="font-medium text-[25.69px] text-[#FCFDFD] leading-none">5.0</p>
-              </div>
-
-              <div>
-                <p className="text-xl text-[#F9FAFB]">
-                  consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum
-                  egestas lobortis.Sed lobortis orci elementum egestas lobortis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

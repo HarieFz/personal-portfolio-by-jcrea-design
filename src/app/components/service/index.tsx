@@ -22,7 +22,7 @@ export default function Service() {
 
         <div className="grid grid-cols-3 gap-[25.5px]">
           <div className="relative group">
-            <div className="relative w-[416px] h-[508px] bg-[#686868]/20 transition-all group-hover:bg-primary rounded-[38px] masking overflow-hidden before:absolute before:inset-0 before:rounded-[inherit] before:border-2 group-hover:before:border-0 before:border-transparent before:[background:radial-gradient(circle_at_bottom,rgba(255,255,255,0),rgba(255,255,255,0.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)]">
+            <div className="relative w-[416px] h-[508px] bg-[#686868]/20 transition-all group-hover:bg-primary rounded-[38px] masking-service overflow-hidden before:absolute before:inset-0 before:rounded-[inherit] before:border-2 group-hover:before:border-0 before:border-transparent before:[background:radial-gradient(circle_at_bottom,rgba(255,255,255,0),rgba(255,255,255,0.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)]">
               <div className="mx-0.5 px-9.25 pt-11 pb-5.75 border-b-2 border-[#F9FAFB]/30">
                 <p className="font-medium text-[32px] text-white">UI/ UX Design</p>
               </div>
@@ -49,7 +49,7 @@ export default function Service() {
             </div>
           </div>
           <div className="relative group">
-            <div className="relative w-[416px] h-[508px] bg-[#686868]/20 transition-all group-hover:bg-primary rounded-[38px] masking overflow-hidden before:absolute before:inset-0 before:rounded-[inherit] before:border-2 group-hover:before:border-0 before:border-transparent before:[background:radial-gradient(circle_at_bottom,rgba(255,255,255,0),rgba(255,255,255,0.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)]">
+            <div className="relative w-[416px] h-[508px] bg-[#686868]/20 transition-all group-hover:bg-primary rounded-[38px] masking-service overflow-hidden before:absolute before:inset-0 before:rounded-[inherit] before:border-2 group-hover:before:border-0 before:border-transparent before:[background:radial-gradient(circle_at_bottom,rgba(255,255,255,0),rgba(255,255,255,0.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)]">
               <div className="mx-0.5 px-9.25 pt-11 pb-5.75 border-b-2 border-[#F9FAFB]/30">
                 <p className="font-medium text-[32px] text-white">Web Design</p>
               </div>
@@ -76,7 +76,7 @@ export default function Service() {
             </div>
           </div>
           <div className="relative group">
-            <div className="relative w-[416px] h-[508px] bg-[#686868]/20 transition-all group-hover:bg-primary rounded-[38px] masking overflow-hidden before:absolute before:inset-0 before:rounded-[inherit] before:border-2 group-hover:before:border-0 before:border-transparent before:[background:radial-gradient(circle_at_bottom,rgba(255,255,255,0),rgba(255,255,255,0.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)]">
+            <div className="relative w-[416px] h-[508px] bg-[#686868]/20 transition-all group-hover:bg-primary rounded-[38px] masking-service overflow-hidden before:absolute before:inset-0 before:rounded-[inherit] before:border-2 group-hover:before:border-0 before:border-transparent before:[background:radial-gradient(circle_at_bottom,rgba(255,255,255,0),rgba(255,255,255,0.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)]">
               <div className="mx-0.5 px-9.25 pt-11 pb-5.75 border-b-2 border-[#F9FAFB]/30">
                 <p className="font-medium text-[32px] text-white">Landing Page</p>
               </div>

@@ -14,20 +14,24 @@ export default function Blog() {
           From my <br /> blog post
         </h1>
 
-        <button className="bg-primary rounded-[60px] px-10 py-5 font-bold text-xl text-white">See all</button>
+        <button className="bg-primary rounded-[60px] px-10 py-5 font-bold text-xl text-white cursor-pointer">
+          See all
+        </button>
       </div>
 
       <div className="grid grid-cols-3 gap-[25.5px]">
         <div className="flex flex-col gap-8.75">
           <div className="relative group">
-            <Image
-              src={Blog1}
-              alt="blog-1"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-[432px] rounded-[35px] object-cover"
-            />
+            <div className="masking-blog">
+              <Image
+                src={Blog1}
+                alt="blog-1"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-[432px] rounded-[38px] object-cover"
+              />
+            </div>
             <div className="absolute bottom-0 right-0 z-10">
               <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary w-28.5 h-28.5 rounded-full flex items-center justify-center">
                 <ArrowRightUp className="w-18 h-18 text-white" />
@@ -58,14 +62,16 @@ export default function Blog() {
         </div>
         <div className="flex flex-col gap-8.75">
           <div className="relative group">
-            <Image
-              src={Blog2}
-              alt="blog-2"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-[432px] rounded-[35px] object-cover"
-            />
+            <div className="masking-blog">
+              <Image
+                src={Blog2}
+                alt="blog-2"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-[432px] rounded-[38px] object-cover"
+              />
+            </div>
             <div className="absolute bottom-0 right-0 z-10">
               <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary w-28.5 h-28.5 rounded-full flex items-center justify-center">
                 <ArrowRightUp className="w-18 h-18 text-white" />
@@ -96,14 +102,16 @@ export default function Blog() {
         </div>
         <div className="flex flex-col gap-8.75">
           <div className="relative group">
-            <Image
-              src={Blog3}
-              alt="blog-3"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-[432px] rounded-[35px] object-cover"
-            />
+            <div className="masking-blog">
+              <Image
+                src={Blog3}
+                alt="blog-3"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-[432px] rounded-[38px] object-cover"
+              />
+            </div>
             <div className="absolute bottom-0 right-0 z-10">
               <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary w-28.5 h-28.5 rounded-full flex items-center justify-center">
                 <ArrowRightUp className="w-18 h-18 text-white" />

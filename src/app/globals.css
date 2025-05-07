@@ -13,9 +13,16 @@
   --animate-infinite-scroll: infinite-scroll 25s linear infinite;
 }
 
-.masking {
+.masking-service {
   -webkit-mask: url("../../public/images/shapes.png") center / contain no-repeat, linear-gradient(black 0 0);
   mask-size: 416px;
+  mask-position: center;
+  mask-composite: intersect;
+}
+
+.masking-blog {
+  -webkit-mask: url("../../public/images/blog-1.png") center / contain no-repeat, linear-gradient(black 0 0);
+  mask-size: 100% 432px;
   mask-position: center;
   mask-composite: intersect;
 }

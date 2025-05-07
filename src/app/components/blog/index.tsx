@@ -8,7 +8,7 @@ import { inter } from "@/components/fonts";
 
 export default function Blog() {
   return (
-    <section className="max-w-7xl w-full mx-auto py-24.25">
+    <section className="min-[1440px]:max-w-7xl max-w-6xl w-full mx-auto py-24.25">
       <div className="flex items-center justify-between mb-12">
         <h1 className="font-bold text-5xl leading-normal text-charcoal-blue">
           From my <br /> blog post
@@ -23,17 +23,19 @@ export default function Blog() {
         <div className="flex flex-col gap-8.75">
           <div className="relative group">
             <div className="masking-blog">
-              <Image
-                src={Blog1}
-                alt="blog-1"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-full h-[432px] rounded-[38px] object-cover"
-              />
+              <div className="max-w-[416px] aspect-[416/432] rounded-[38px]">
+                <Image
+                  src={Blog1}
+                  alt="blog-1"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="rounded-[inherit] object-cover"
+                />
+              </div>
             </div>
             <div className="absolute bottom-0 right-0 z-10">
-              <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary w-28.5 h-28.5 rounded-full flex items-center justify-center">
+              <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary min-[1440px]:w-28.5 min-[1440px]:h-28.5 w-24.5 h-24.5 rounded-full flex items-center justify-center">
                 <ArrowRightUp className="w-18 h-18 text-white" />
               </div>
             </div>
@@ -63,17 +65,19 @@ export default function Blog() {
         <div className="flex flex-col gap-8.75">
           <div className="relative group">
             <div className="masking-blog">
-              <Image
-                src={Blog2}
-                alt="blog-2"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-full h-[432px] rounded-[38px] object-cover"
-              />
+              <div className="max-w-[416px] aspect-[416/432] rounded-[38px]">
+                <Image
+                  src={Blog2}
+                  alt="blog-2"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="rounded-[inherit] object-cover"
+                />
+              </div>
             </div>
             <div className="absolute bottom-0 right-0 z-10">
-              <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary w-28.5 h-28.5 rounded-full flex items-center justify-center">
+              <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary min-[1440px]:w-28.5 min-[1440px]:h-28.5 w-24.5 h-24.5 rounded-full flex items-center justify-center">
                 <ArrowRightUp className="w-18 h-18 text-white" />
               </div>
             </div>
@@ -103,17 +107,19 @@ export default function Blog() {
         <div className="flex flex-col gap-8.75">
           <div className="relative group">
             <div className="masking-blog">
-              <Image
-                src={Blog3}
-                alt="blog-3"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-full h-[432px] rounded-[38px] object-cover"
-              />
+              <div className="max-w-[416px] aspect-[416/432] rounded-[38px]">
+                <Image
+                  src={Blog3}
+                  alt="blog-3"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="rounded-[inherit] object-cover"
+                />
+              </div>
             </div>
             <div className="absolute bottom-0 right-0 z-10">
-              <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary w-28.5 h-28.5 rounded-full flex items-center justify-center">
+              <div className="bg-dark-bluish-gray transition-colors group-hover:bg-primary min-[1440px]:w-28.5 min-[1440px]:h-28.5 w-24.5 h-24.5 rounded-full flex items-center justify-center">
                 <ArrowRightUp className="w-18 h-18 text-white" />
               </div>
             </div>

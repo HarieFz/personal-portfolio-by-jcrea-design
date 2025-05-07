@@ -23,7 +23,8 @@
 
 .masking-blog {
   -webkit-mask: url("../../public/images/blog-1.png") center / contain no-repeat, linear-gradient(black 0 0);
-  mask-size: 100% 432px;
+  -webkit-mask-composite: destination-in;
+  mask: url("../../public/images/blog-1.png") center / contain no-repeat, linear-gradient(black 0 0);
   mask-position: center;
   mask-composite: intersect;
 }

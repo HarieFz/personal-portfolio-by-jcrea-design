@@ -1,4 +1,5 @@
 import About from "./components/about";
+import Blog from "./components/blog";
 import ContactCTA from "./components/contact-cta";
 import Experience from "./components/experience";
 import Hero from "./components/hero";
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonial />
       <ContactCTA />
       <TagScroller />
+      <Blog />
     </main>
   );
 }

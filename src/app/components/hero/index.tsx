@@ -53,14 +53,18 @@ export default function Hero() {
           >
             <button
               className={`flex items-center rounded-[60px] py-2.5 text-[25.69px] text-nowrap text-white transition-all ${
-                isBtnDefault ? "bg-primary border-[0.5px] border-[#D0D5DD] px-8 font-medium" : "px-[17.5px] font-light"
+                isBtnDefault
+                  ? "bg-primary outline-[0.5px] outline-[#D0D5DD] px-8 font-medium"
+                  : "px-[17.5px] font-light"
               }`}
             >
               Portfolio <ArrowRightUp className={`w-10.5 h-10.5 ${isBtnDefault ? "flex" : "hidden"}`} />
             </button>
             <button
               className={`flex items-center rounded-[60px] py-2.5 text-[25.69px] text-nowrap text-white transition-all ${
-                !isBtnDefault ? "bg-primary border-[0.5px] border-[#D0D5DD] px-8 font-medium" : "px-[17.5px] font-light"
+                !isBtnDefault
+                  ? "bg-primary outline-[0.5px] outline-[#D0D5DD] px-8 font-medium"
+                  : "px-[17.5px] font-light"
               }`}
               onMouseEnter={() => setIsBtnDefault(false)}
               onMouseLeave={() => setIsBtnDefault(true)}

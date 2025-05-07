@@ -1,24 +1,15 @@
-"use client";
-
-import { usePathname } from "next/navigation";
-import Logo from "../../../public/images/logo-jc.png";
-import Typo from "../../../public/images/logo-typo.png";
 import React from "react";
 import Image from "next/image";
+import Logo from "../../public/images/logo-jc.png";
+import Typo from "../../public/images/logo-typo.png";
 
 export default function Header() {
-  const pathname = usePathname();
-
   return (
     <header className="min-[1440px]:max-w-7xl max-w-6xl mx-auto mt-12.5">
       <div className="bg-black rounded-[50px] p-2.5">
         <nav>
           <ul className="flex flex-wrap items-center justify-between gap-[14.17px] text-white">
-            <li
-              className={`px-10 py-5 rounded-[60px] transition-colors hover:bg-primary cursor-pointer ${
-                pathname === "/" ? "bg-primary" : "bg-black"
-              }`}
-            >
+            <li className="px-10 py-5 rounded-[60px] transition-colors hover:bg-primary cursor-pointer bg-primary">
               Home
             </li>
             <li className="px-10 py-5 rounded-[60px] transition-colors hover:bg-primary cursor-pointer">About</li>

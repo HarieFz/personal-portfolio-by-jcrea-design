@@ -1,13 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
-import Illustration3 from "../../../../public/images/illustration-3.png";
-import Illustration4 from "../../../../public/images/illustration-4.png";
-import Illustration5 from "../../../../public/images/illustration-5.png";
-import Person from "../../../../public/images/person.png";
-import Stars from "../../../../public/images/stars.png";
-import { urbanist } from "@/components/fonts";
+import Image from "next/image";
+import Illustration3 from "../../../public/images/illustration-3.png";
+import Illustration4 from "../../../public/images/illustration-4.png";
+import Illustration5 from "../../../public/images/illustration-5.png";
+import Person from "../../../public/images/person.png";
+import Stars from "../../../public/images/stars.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
 import "swiper/css/free-mode";
@@ -77,7 +76,7 @@ export default function Testimonial() {
           initialSlide={1}
           modules={[FreeMode]}
         >
-          {testimonials.map((_, index) => (
+          {testimonials?.map((_, index) => (
             <SwiperSlide key={index} className="!w-[784px]">
               <div className="rounded-3xl p-5.25 group relative">
                 <div className="absolute inset-0 bg-white/[14%] rounded-[inherit] backdrop-blur-sm z-0 border-2 border-transparent transition-colors group-hover:border-[#979797]" />
@@ -92,12 +91,10 @@ export default function Testimonial() {
                       className="w-13.75 h-13.75 rounded-full"
                     />
                     <div>
-                      <p className={`${urbanist.className} font-bold text-[23.5px] tracking-normal text-[#FCFCFD]`}>
+                      <p className="font-urbanist font-bold text-[23.5px] tracking-normal text-[#FCFCFD]">
                         Jayesh Patil
                       </p>
-                      <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>
-                        CEO, Lirante
-                      </p>
+                      <p className="font-urbanist text-[18.25px] tracking-normal text-[#FCFCFD]">CEO, Lirante</p>
                     </div>
                   </div>
 

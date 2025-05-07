@@ -1,5 +1,5 @@
 import React from "react";
-import Shuriken from "../../../../public/icons/shuriken.svg";
+import Shuriken from "../../../public/icons/shuriken.svg";
 
 export default function TagScroller() {
   return (

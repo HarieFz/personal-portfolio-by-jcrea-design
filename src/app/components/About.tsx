@@ -1,7 +1,7 @@
 import React from "react";
-import Jenny from "../../../../public/images/jenny-2.png";
-import Illustration from "../../../../public/images/illustration-jenny-2.png";
 import Image from "next/image";
+import Jenny from "../../../public/images/jenny-2.png";
+import Illustration from "../../../public/images/illustration-jenny-2.png";
 
 export default function About() {
   return (

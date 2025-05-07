@@ -1,10 +1,9 @@
 import React from "react";
-import Blog1 from "../../../../public/images/blog-1.png";
-import Blog2 from "../../../../public/images/blog-2.png";
-import Blog3 from "../../../../public/images/blog-3.png";
-import ArrowRightUp from "../../../../public/icons/arrow-right-up.svg";
 import Image from "next/image";
-import { inter } from "@/components/fonts";
+import ArrowRightUp from "../../../public/icons/arrow-right-up.svg";
+import Blog1 from "../../../public/images/blog-1.png";
+import Blog2 from "../../../public/images/blog-2.png";
+import Blog3 from "../../../public/images/blog-3.png";
 
 export default function Blog() {
   return (
@@ -41,18 +40,16 @@ export default function Blog() {
             </div>
           </div>
 
-          <div className={`${inter.className} bg-[#F2F4F7] w-fit rounded-3xl px-8 py-3.75 text-xl text-black`}>
-            UI/ UX Design
-          </div>
+          <div className="font-inter bg-[#F2F4F7] w-fit rounded-3xl px-8 py-3.75 text-xl text-black">UI/ UX Design</div>
 
           <div className="flex items-center gap-8.75">
             <div className="flex items-center gap-2.5">
               <div className="bg-primary w-2.25 h-2.25 rounded-full" />
-              <p className={`${inter.className} text-xl tracking-normal text-charcoal-blue`}>Jayesh Patil</p>
+              <p className="font-inter text-xl tracking-normal text-charcoal-blue">Jayesh Patil</p>
             </div>
             <div className="flex items-center gap-2.5">
               <div className="bg-primary w-2.25 h-2.25 rounded-full" />
-              <p className={`${inter.className} text-xl tracking-normal text-charcoal-blue`}>10 Nov, 2023</p>
+              <p className="font-inter text-xl tracking-normal text-charcoal-blue">10 Nov, 2023</p>
             </div>
           </div>
 
@@ -83,18 +80,16 @@ export default function Blog() {
             </div>
           </div>
 
-          <div className={`${inter.className} bg-[#F2F4F7] w-fit rounded-3xl px-8 py-3.75 text-xl text-black`}>
-            App Design
-          </div>
+          <div className="font-inter bg-[#F2F4F7] w-fit rounded-3xl px-8 py-3.75 text-xl text-black">App Design</div>
 
           <div className="flex items-center gap-8.75">
             <div className="flex items-center gap-2.5">
               <div className="bg-primary w-2.25 h-2.25 rounded-full" />
-              <p className={`${inter.className} text-xl tracking-normal text-charcoal-blue`}>Jayesh Patil</p>
+              <p className="font-inter text-xl tracking-normal text-charcoal-blue">Jayesh Patil</p>
             </div>
             <div className="flex items-center gap-2.5">
               <div className="bg-primary w-2.25 h-2.25 rounded-full" />
-              <p className={`${inter.className} text-xl tracking-normal text-charcoal-blue`}>09 Oct, 2023</p>
+              <p className="font-inter text-xl tracking-normal text-charcoal-blue">09 Oct, 2023</p>
             </div>
           </div>
 
@@ -125,18 +120,16 @@ export default function Blog() {
             </div>
           </div>
 
-          <div className={`${inter.className} bg-[#F2F4F7] w-fit rounded-3xl px-8 py-3.75 text-xl text-black`}>
-            App Design
-          </div>
+          <div className="font-inter bg-[#F2F4F7] w-fit rounded-3xl px-8 py-3.75 text-xl text-black">App Design</div>
 
           <div className="flex items-center gap-8.75">
             <div className="flex items-center gap-2.5">
               <div className="bg-primary w-2.25 h-2.25 rounded-full" />
-              <p className={`${inter.className} text-xl tracking-normal text-charcoal-blue`}>Jayesh Patil</p>
+              <p className="font-inter text-xl tracking-normal text-charcoal-blue">Jayesh Patil</p>
             </div>
             <div className="flex items-center gap-2.5">
               <div className="bg-primary w-2.25 h-2.25 rounded-full" />
-              <p className={`${inter.className} text-xl tracking-normal text-charcoal-blue`}>13 Aug, 2023</p>
+              <p className="font-inter text-xl tracking-normal text-charcoal-blue">13 Aug, 2023</p>
             </div>
           </div>
 

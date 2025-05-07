@@ -1,14 +1,14 @@
 import React from "react";
-import ArrowRightUp from "../../../public/icons/arrow-right-up.svg";
-import Logo from "../../../public/images/logo-jc.png";
-import Typo from "../../../public/images/logo-typo.png";
-import Facebook from "../../../public/icons/facebook.svg";
-import Youtube from "../../../public/icons/youtube.svg";
-import Whatsapp from "../../../public/icons/whatsapp.svg";
-import Instagram from "../../../public/icons/instagram.svg";
-import Twitter from "../../../public/icons/twitter.svg";
-import Send from "../../../public/icons/send.svg";
 import Image from "next/image";
+import ArrowRightUp from "../../public/icons/arrow-right-up.svg";
+import Logo from "../../public/images/logo-jc.png";
+import Typo from "../../public/images/logo-typo.png";
+import Facebook from "../../public/icons/facebook.svg";
+import Youtube from "../../public/icons/youtube.svg";
+import Whatsapp from "../../public/icons/whatsapp.svg";
+import Instagram from "../../public/icons/instagram.svg";
+import Twitter from "../../public/icons/twitter.svg";
+import Send from "../../public/icons/send.svg";
 
 export default function Footer() {
   return (

@@ -1,16 +1,16 @@
-import About from "./components/about";
-import Blog from "./components/blog";
-import ContactCTA from "./components/contact-cta";
-import Experience from "./components/experience";
-import Hero from "./components/hero";
-import Project from "./components/project";
-import Service from "./components/service";
-import TagScroller from "./components/tag-scroller";
-import Testimonial from "./components/testimonial";
+import About from "./components/About";
+import Blog from "./components/Blog";
+import ContactCTA from "./components/ContactCTA";
+import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Project from "./components/Project";
+import Service from "./components/Service";
+import TagScroller from "./components/TagScroller";
+import Testimonial from "./components/Testimonial";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <Service />
       <Experience />
@@ -20,6 +20,6 @@ export default function Home() {
       <ContactCTA />
       <TagScroller />
       <Blog />
-    </main>
+    </>
   );
 }

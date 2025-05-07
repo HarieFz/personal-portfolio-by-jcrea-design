@@ -1,9 +1,8 @@
 import React from "react";
-import ArrowRight from "../../../../public/icons/arrow-right.svg";
-import ArrowRightUp from "../../../../public/icons/arrow-right-up.svg";
-import { inter } from "@/components/fonts";
+import ArrowRight from "../../../public/icons/arrow-right.svg";
+import ArrowRightUp from "../../../public/icons/arrow-right-up.svg";
 
-const project = [1, 2];
+const projects = [1, 2];
 
 export default function Project() {
   return (
@@ -25,7 +24,7 @@ export default function Project() {
 
       <div className="flex flex-col items-center gap-12">
         <div className="w-full shrink-0 grid grid-cols-2 gap-6 h-[371px]">
-          {project.map((_, index) => (
+          {projects?.map((_, index) => (
             <div
               key={index}
               className="relative w-full h-full flex items-end rounded-[20px] p-2.5 bg-white bg-[url(/images/project-1.png)] bg-cover bg-center bg-no-repeat group"
@@ -63,7 +62,7 @@ export default function Project() {
           <div className="bg-[#E4E7EC] w-[15.08px] h-[15.08px] rounded-[20.74px]" />
         </div>
 
-        <div className={`${inter.className} flex items-center gap-3.5`}>
+        <div className="font-inter flex items-center gap-3.5">
           <div className="bg-[#F2F4F7] rounded-3xl px-8 py-3.75 text-xl tracking-normal text-black">Landing Page</div>
           <div className="bg-[#F2F4F7] rounded-3xl px-8 py-3.75 text-xl tracking-normal text-black">Product Design</div>
           <div className="bg-[#F2F4F7] rounded-3xl px-8 py-3.75 text-xl tracking-normal text-black">Animation</div>

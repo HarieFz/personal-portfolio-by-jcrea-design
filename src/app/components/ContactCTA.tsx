@@ -1,9 +1,8 @@
 import React from "react";
-import Award from "../../../../public/icons/award.svg";
-import Sms from "../../../../public/icons/sms.svg";
-import Star from "../../../../public/icons/star.svg";
-import ShieldTick from "../../../../public/icons/shield-tick.svg";
-import { urbanist } from "@/components/fonts";
+import Award from "../../../public/icons/award.svg";
+import Sms from "../../../public/icons/sms.svg";
+import Star from "../../../public/icons/star.svg";
+import ShieldTick from "../../../public/icons/shield-tick.svg";
 
 export default function ContactCTA() {
   return (
@@ -27,14 +26,12 @@ export default function ContactCTA() {
               name=""
               id=""
               placeholder="Enter Email Address"
-              className={`${urbanist.className} w-full font-medium text-xl text-black focus:outline-none`}
+              className="font-urbanist w-full font-medium text-xl text-black focus:outline-none"
             />
           </div>
 
           <div className="w-fit">
-            <button
-              className={`${urbanist.className} bg-primary rounded-[60px] px-10 py-5 font-medium text-xl text-white cursor-pointer`}
-            >
+            <button className="font-urbanist bg-primary rounded-[60px] px-10 py-5 font-medium text-xl text-white cursor-pointer">
               Send
             </button>
           </div>

@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @theme {
+  --font-lufga: var(--font-lufga);
+  --font-inter: var(--font-inter);
+  --font-urbanist: var(--font-urbanist);
+
   --color-primary: #fd853a;
   --color-black: #171717;
   --color-dark-bluish-gray: #1d2939;

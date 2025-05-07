@@ -1,9 +1,9 @@
 import React from "react";
-import Service1 from "../../../../public/images/service-1.png";
-import ArrowRightUp from "../../../../public/icons/arrow-right-up.svg";
 import Image from "next/image";
+import ArrowRightUp from "../../../public/icons/arrow-right-up.svg";
+import Service1 from "../../../public/images/service-1.png";
 
-const service = [{ name: "UI/ UX Design" }, { name: "Web Design" }, { name: "Landing Page" }];
+const services = [{ name: "UI/ UX Design" }, { name: "Web Design" }, { name: "Landing Page" }];
 
 export default function Service() {
   return (
@@ -23,12 +23,12 @@ export default function Service() {
         </div>
 
         <div className="grid grid-cols-3 gap-[25.5px]">
-          {service.map((item, index) => (
+          {services?.map((item, index) => (
             <div key={index} className="relative group">
               <div className="masking-service">
                 <div className="relative aspect-[416/508] max-w-[416px] bg-[#686868]/20 transition-all group-hover:bg-primary rounded-[38px] overflow-hidden before:absolute before:inset-0 before:rounded-[inherit] before:border-2 group-hover:before:border-0 before:border-transparent before:[background:radial-gradient(circle_at_bottom,rgba(255,255,255,0),rgba(255,255,255,0.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)]">
                   <div className="mx-0.5 px-9.25 pt-11 pb-5.75 border-b-2 border-[#F9FAFB]/30">
-                    <p className="font-medium text-[32px] text-white">{item.name}</p>
+                    <p className="font-medium text-[32px] text-white">{item?.name}</p>
                   </div>
                   <div className="aspect-[416/400] flex items-end">
                     <div className="relative transition-transform group-hover:-translate-y-2.25">

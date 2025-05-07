@@ -2,16 +2,15 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import Illustration1 from "../../../../public/images/illustration-1.png";
-import Illustration2 from "../../../../public/images/illustration-2.png";
-import IllustrationJenny from "../../../../public/images/illustration-jenny-1.png";
-import Jenny from "../../../../public/images/jenny-1.png";
-import Ellipse from "../../../../public/images/ellipse.png";
-import Stars from "../../../../public/images/stars.png";
-import QuoteUp from "../../../../public/images/quote-up.png";
-import ArrowRightUp from "../../../../public/icons/arrow-right-up.svg";
 import { AnimatePresence, motion } from "motion/react";
-import { urbanist } from "../../../components/fonts";
+import ArrowRightUp from "../../../public/icons/arrow-right-up.svg";
+import Illustration1 from "../../../public/images/illustration-1.png";
+import Illustration2 from "../../../public/images/illustration-2.png";
+import IllustrationJenny from "../../../public/images/illustration-jenny-1.png";
+import Jenny from "../../../public/images/jenny-1.png";
+import Ellipse from "../../../public/images/ellipse.png";
+import Stars from "../../../public/images/stars.png";
+import QuoteUp from "../../../public/images/quote-up.png";
 
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
@@ -32,7 +31,7 @@ export default function Hero() {
         </button>
 
         <div className="relative z-0">
-          <p className={`font-semibold text-[95.57px] leading-none text-center text-black ${urbanist.className}`}>
+          <p className="font-urbanist font-semibold text-[95.57px] leading-none text-center text-black">
             I’m <span className="text-primary">Jenny</span>,
             <br />
             Product Designer

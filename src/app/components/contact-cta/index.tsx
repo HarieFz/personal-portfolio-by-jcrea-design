@@ -33,7 +33,7 @@ export default function ContactCTA() {
 
           <div className="w-fit">
             <button
-              className={`${urbanist.className} bg-primary rounded-[60px] px-10 py-5 font-medium text-xl text-white`}
+              className={`${urbanist.className} bg-primary rounded-[60px] px-10 py-5 font-medium text-xl text-white cursor-pointer`}
             >
               Send
             </button>

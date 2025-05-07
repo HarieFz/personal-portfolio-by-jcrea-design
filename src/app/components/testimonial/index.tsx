@@ -76,11 +76,9 @@ export default function Testimonial() {
                 />
                 <div>
                   <p className={`${urbanist.className} font-bold text-[23.5px] tracking-normal text-[#FCFCFD]`}>
-                    Fawzi Sayed
+                    Jayesh Patil
                   </p>
-                  <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>
-                    Ui Ux Designer
-                  </p>
+                  <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>CEO, Lirante</p>
                 </div>
               </div>
 
@@ -112,11 +110,9 @@ export default function Testimonial() {
                 />
                 <div>
                   <p className={`${urbanist.className} font-bold text-[23.5px] tracking-normal text-[#FCFCFD]`}>
-                    Fawzi Sayed
+                    Jayesh Patil
                   </p>
-                  <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>
-                    Ui Ux Designer
-                  </p>
+                  <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>CEO, Lirante</p>
                 </div>
               </div>
 
@@ -148,11 +144,9 @@ export default function Testimonial() {
                 />
                 <div>
                   <p className={`${urbanist.className} font-bold text-[23.5px] tracking-normal text-[#FCFCFD]`}>
-                    Fawzi Sayed
+                    Jayesh Patil
                   </p>
-                  <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>
-                    Ui Ux Designer
-                  </p>
+                  <p className={`${urbanist.className} text-[18.25px] tracking-normal text-[#FCFCFD]`}>CEO, Lirante</p>
                 </div>
               </div>
 

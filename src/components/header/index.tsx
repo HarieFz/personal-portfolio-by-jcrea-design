@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Logo from "../../../public/images/logo-jc.png";
+import Typo from "../../../public/images/logo-typo.png";
 import React from "react";
 import Image from "next/image";
 
@@ -25,7 +26,7 @@ export default function Header() {
             <li className="w-[307px] lg:w-[126px] rounded-[60px]">
               <span className="flex items-center justify-center gap-2.5">
                 <Image src={Logo} alt="logo JC" width={0} height={0} sizes="100vw" className="w-11.5 h-11.5" />
-                <p>JCREA</p>
+                <Image src={Typo} alt="JCREA" width={0} height={0} className="w-[82.51px] h-[19.22px]" />
               </span>
             </li>
             <li className="px-10 py-5 rounded-[60px] transition-colors hover:bg-primary cursor-pointer">Resume</li>

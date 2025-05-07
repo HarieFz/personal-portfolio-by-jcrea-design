@@ -3,6 +3,8 @@ import ArrowRight from "../../../../public/icons/arrow-right.svg";
 import ArrowRightUp from "../../../../public/icons/arrow-right-up.svg";
 import { inter } from "@/components/fonts";
 
+const project = [1, 2];
+
 export default function Project() {
   return (
     <section className="max-w-8xl w-full mx-auto px-17.75 py-24.25">
@@ -23,48 +25,35 @@ export default function Project() {
 
       <div className="flex flex-col items-center gap-12">
         <div className="w-full shrink-0 grid grid-cols-2 gap-6 h-[371px]">
-          <div className="relative w-full h-full flex items-end rounded-[20px] p-2.5 bg-white bg-[url(/images/project-1.png)] bg-cover bg-center bg-no-repeat group">
-            <div className="absolute inset-0 rounded-[inherit] pointer-events-none bg-linear-[197deg] z-0 from-[44%] from-black/0 via-[83%] via-black/[72%] to-100% to-black opacity-50"></div>
-            <div className="absolute top-2.5 right-2.5">
-              <button className="border border-primary transition-colors group-hover:bg-primary p-3.75 rounded-full">
-                <ArrowRight className="w-8.5 h-8.5 text-primary transition-colors group-hover:text-white" />
-              </button>
-            </div>
+          {project.map((_, index) => (
+            <div
+              key={index}
+              className="relative w-full h-full flex items-end rounded-[20px] p-2.5 bg-white bg-[url(/images/project-1.png)] bg-cover bg-center bg-no-repeat group"
+            >
+              <div className="absolute inset-0 rounded-[inherit] pointer-events-none bg-linear-[197deg] z-0 from-[44%] from-black/0 via-[83%] via-black/[72%] to-100% to-black opacity-50"></div>
+              <div className="absolute top-2.5 right-2.5">
+                <button className="border border-primary transition-colors group-hover:bg-primary p-3.75 rounded-full">
+                  <ArrowRight className="w-8.5 h-8.5 text-primary transition-colors group-hover:text-white" />
+                </button>
+              </div>
 
-            <div className="relative z-10">
-              <div className="transition-all group-hover:relative group-hover:bg-black/30 group-hover:rounded-3xl group-hover:px-6 group-hover:py-5">
-                <div className="transition-all group-hover:absolute group-hover:rounded-[inherit] group-hover:inset-0 group-hover:backdrop-blur-sm group-hover:-z-10"></div>
-                <p className="transition-all font-bold text-[70px] leading-none text-[#FFFAF5] p-2.5 group-hover:p-0 group-hover:mb-6.25">
-                  Lirante
-                </p>
-                <p className="transition-all hidden group-hover:flex group-hover:text-[#FFEAD5]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
-                </p>
+              <div className="relative z-10">
+                <div className="transition-all group-hover:relative group-hover:bg-black/30 group-hover:rounded-3xl group-hover:py-5 overflow-hidden">
+                  <div className="transition-all group-hover:absolute group-hover:rounded-[inherit] group-hover:inset-0 group-hover:backdrop-blur-sm group-hover:-z-10"></div>
+                  <p className="transition-all font-bold text-[70px] leading-none text-[#FFFAF5] p-2.5 group-hover:py-0 group-hover:px-6 group-hover:mb-6.25">
+                    Lirante
+                  </p>
+                  <div className="px-6 hidden transition-opacity group-hover:flex">
+                    <p className="text-[#FFEAD5] line-clamp-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
+                      lobortis.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="relative w-full h-full flex items-end rounded-[20px] p-2.5 bg-white bg-[url(/images/project-1.png)] bg-cover bg-center bg-no-repeat group">
-            <div className="absolute inset-0 rounded-[inherit] pointer-events-none bg-linear-[197deg] z-0 from-[44%] from-black/0 via-[83%] via-black/[72%] to-100% to-black opacity-50"></div>
-            <div className="absolute top-2.5 right-2.5">
-              <button className="border border-primary transition-colors group-hover:bg-primary p-3.75 rounded-full">
-                <ArrowRight className="w-8.5 h-8.5 text-primary transition-colors group-hover:text-white" />
-              </button>
-            </div>
-
-            <div className="relative z-10">
-              <div className="transition-all group-hover:relative group-hover:bg-black/30 group-hover:rounded-3xl group-hover:px-6 group-hover:py-5">
-                <div className="transition-all group-hover:absolute group-hover:rounded-[inherit] group-hover:inset-0 group-hover:backdrop-blur-sm group-hover:-z-10"></div>
-                <p className="transition-all font-bold text-[70px] leading-none text-[#FFFAF5] p-2.5 group-hover:p-0 group-hover:mb-6.25">
-                  Lirante
-                </p>
-                <p className="transition-all hidden group-hover:flex group-hover:text-[#FFEAD5]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
         <div className="flex items-center gap-[11.31px]">

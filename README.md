@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📌 JCREA — Personal Portfolio Website for Product Designer
 
-## Getting Started
+JCREA is a modern, and visually captivating personal portfolio website built for a product designer to showcase services, work experience, portfolio projects, client testimonials, and blog posts. The goal is to provide a professional digital presence that communicates skills, achievements, and creativity, while also encouraging potential clients or employers to get in touch.
 
-First, run the development server:
+Key highlights of this project include:
+
+- Clean and elegant design with strong visual hierarchy.
+- Sections for services, portfolio, work experience, testimonials, and blog.
+- CTA buttons like "Hire Me" and "Let’s Discuss" for client engagement.
+- Engaging animations and interactive transitions that enhance the user experience and add a dynamic feel to the site.
+- ⚠️ Note: This project is currently optimized for laptop and desktop screen sizes only. Mobile responsiveness is not fully supported.
+
+## 🌐 Demo
+
+Live demo: [https://personal-portfolio-by-jcrea-design.vercel.app/](https://personal-portfolio-by-jcrea-design.vercel.app/)
+
+## 🖼️ Preview
+
+![Preview](/public/images/screenshot.png)
+
+## 🛠️ Built With
+
+- Next.js
+- Tailwind CSS
+- Framer Motion
+- Swiper
+- React Router
+- @svgr/webpack
+
+## 📦 Installation
+
+Steps to run the project locally:
 
 ```bash
+# Clone the repository
+git clone https://github.com/HarieFz/personal-portfolio-by-jcrea-design.git
+
+# Navigate to the project directory
+cd personal-portfolio-by-jcrea-design
+
+# Install dependencies
+npm install
+
+# Start the local development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Reference
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Figma Comunity - Jayesh Patil](https://www.figma.com/community/file/1299737213921915682/portfolio-product-designer-portfolio-website)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧾 License
 
-## Learn More
+This project is licensed under the [MIT License](https://github.com/HarieFz/dashboard-by-dashlite-design/blob/main/LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️ by Harie Fairuz Zaki

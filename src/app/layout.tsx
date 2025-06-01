@@ -115,8 +115,9 @@ const lufga = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio",
-  description: "Personal Portfolio",
+  title: "JCREA — Personal Portfolio Website for Product Designer",
+  description:
+    "JCREA is a modern, and visually captivating personal portfolio website built for a product designer to showcase services, work experience, portfolio projects, client testimonials, and blog posts. The goal is to provide a professional digital presence that communicates skills, achievements, and creativity, while also encouraging potential clients or employers to get in touch.",
 };
 
 export default function RootLayout({

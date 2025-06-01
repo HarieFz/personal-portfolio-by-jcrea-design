@@ -49,8 +49,15 @@ npm run dev
 
 - [Figma Comunity - Jayesh Patil](https://www.figma.com/community/file/1299737213921915682/portfolio-product-designer-portfolio-website)
 
-## 🧾 License
+## 📄 License
 
-This project is licensed under the [MIT License](https://github.com/HarieFz/dashboard-by-dashlite-design/blob/main/LICENSE).
+[![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License**.
+
+You may view, copy, and adapt this code for personal and educational purposes only.  
+**Commercial use is strictly prohibited** without prior written permission.
+
+🔗 [Read full license text here](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Made with ❤️ by Harie Fairuz Zaki
